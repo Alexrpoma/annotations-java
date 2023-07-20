@@ -7,5 +7,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface CustomAnnotationForAtribute {
+public @interface CustomAnnotationForAttribute {
+  int age() default 2;
 }

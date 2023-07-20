@@ -1,4 +1,4 @@
-import annotations.CustomAnnotationForAtribute;
+import annotations.CustomAnnotationForAttribute;
 import annotations.CustomAnnotationForClass;
 import annotations.CustomAnnotationForConstructor;
 import annotations.CustomAnnotationForMethod;
@@ -6,8 +6,10 @@ import annotations.CustomAnnotationForMethod;
 @CustomAnnotationForClass
 public class Cat {
 
-  @CustomAnnotationForAtribute
   private final String name;
+
+  @CustomAnnotationForAttribute(age = 1)
+  int age;
 
   @CustomAnnotationForConstructor
   public Cat(String name) {
